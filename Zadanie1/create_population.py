@@ -1,6 +1,7 @@
 from random import shuffle
 
 
+# Random individual -> list[number]
 def randomize_p(x):
     p = []
     for i in range(x):
@@ -9,6 +10,7 @@ def randomize_p(x):
     return p
 
 
+# Random population -> list[list[number]]
 def randomize_population(size: int, n: int):
     population = []
     for i in range(n):

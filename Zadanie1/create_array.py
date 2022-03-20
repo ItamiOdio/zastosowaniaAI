@@ -1,14 +1,17 @@
+# Read data from file
 def read_data(filename: str):
     f = open("Datasets/" + filename, "r")
     data = [[int(n) for n in line.split()] for line in f]
     return data
 
 
+# Get number of cities in dataset
 def get_city_count(data: list):
     city_count = data[0][0]
     return city_count
 
 
+# Create array from dataset
 def create_arr(data: list):
     count = get_city_count(data)
     del data[0]
