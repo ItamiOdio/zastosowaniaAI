@@ -5,6 +5,8 @@ def rate_p(values_array: list, p: list):
         x = p[i]
         y = p[i+1]
         rating += values_array[x][y]
+    x = values_array[p[-1]][p[0]]
+    rating += values_array[p[-1]][p[0]]
     return rating
 
 
@@ -15,4 +17,3 @@ def rate_population(arr:list, population:list):
         rating = rate_p(arr, population[i])
         population_rating.append(rating)
     return population_rating
-

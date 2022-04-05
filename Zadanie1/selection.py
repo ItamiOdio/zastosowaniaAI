@@ -29,7 +29,7 @@ def tournament_selection(k: int, population: list, values: list):
         # print(rnd_ind[index_min])
         result.append(population[rnd_ind[index_min]])
 
-    print(rating.rate_population(values, result))
+    #print(rating.rate_population(values, result))
     return result
 
 
